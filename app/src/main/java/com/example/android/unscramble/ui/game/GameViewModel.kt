@@ -55,7 +55,7 @@ class GameViewModel : ViewModel() {
     }
 
     fun isUserWordCorrect(playerWord: String): Boolean {
-        return if (playerWord.equals(currentScrambledWord, true)) {
+        return if (playerWord.equals(currentWord, true)) {
             increaseScore()
             true
         } else false
